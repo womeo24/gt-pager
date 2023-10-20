@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.gt {
+    background-image: url(./img/bobo.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.container {
+  background: #bdb5b5;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-style {
+  display: flex;
+  background: #ecc3c3;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  padding: 2px 24px;
+  background: #000;
+  color: white;
+}
+.text {
+  height: 300px;
+  width: 100%;
+  background: #3f3a3a;
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+  display: flex;
+}
+
+.lorem {
+  font-size: 28px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* mobile view */
+ @media screen and (max-width: 650px) {
+  body {
+    background: #c4c1c1;
+  } 
+
+  .lorem {
+    font-size: small;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+
+    list-style: none;
+  }
+
+  li {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 2px 24px;
+    background: #000;
+    color: white;
+  }
+
+  .equar {
+    padding: 2px 14px;
+  }
+} 
+
+/* tap */
+ @media screen and (min-width: 650px) { */
+  body {
+    background: #60ec44;
+  }
+
+  .lorem {
+    font-size: large;
+  }
+
+  .equar {
+    display: none;
+    padding: 8px;
+  }
+} 
+
+/* laptop */
+@media screen and (min-width: 1024px) {
+  body {
+    background: #ee3a3a;
+  }
+
+  .equar {
+    display: none;
+  }
+
+  .lorem {
+    font-size: larger;
+  }
+}
